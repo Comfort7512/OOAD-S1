@@ -13,7 +13,7 @@ public class SavingsAccount extends  Account implements PayInterest {
     }
 
     public void applyInterest(){
-        
+    
     }
     
 }
