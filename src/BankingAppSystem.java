@@ -1,6 +1,6 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class BankingAppSystem {
     public static void main(String[] args) {
 
 
@@ -14,6 +14,9 @@ public class Main {
         savings.setCustomer(cutsomer1);
         cutsomer1.addAccount(savings);
 
+        SavingsAccount savings1 = new SavingsAccount();
+        ;
+
         InvestmentAccount investement = new InvestmentAccount(500);
         investement.deposit(100);
         investement.branchCode = "495040";
@@ -23,6 +26,18 @@ public class Main {
         cutsomer1.addAccount(investement);
 
         System.out.println(investement.viewBalance());
+        Customer Henry = new WorkingCustomer("Henry","po box 48","private Bag 004","Okavango",7858473);
+
+
+        ChequeAccount chkaccount = new ChequeAccount(6000,Henry);
+        chkaccount.withDraw(500);
+        chkaccount.accountNumber = "343322";
+        Henry.addAccount(chkaccount);
+        Henry.viewAllCustomerAccounts();
+
+
+
+
 
         /*
 
@@ -33,8 +48,8 @@ public class Main {
         cutsomer1.viewAllCustomerAccounts();*/
 
 
-        cutsomer1.viewAllCustomerAccounts();
-        investement.payInterest();
+        //cutsomer1.viewAllCustomerAccounts();
+        //investement.payInterest();
 
 
 

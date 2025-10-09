@@ -19,6 +19,14 @@ public abstract class Customer {
     ArrayList<Account> accounts = new ArrayList<>();
 
     public void addAccount(Account account){
+        if(accounts.size() > 3){
+            System.out.println("Cannot have more than 3 accounts");
+        }
+        for(Account acc : accounts){
+            if(acc.getClass() == account.getClass()){
+                throw new IllegalArgumentException("Cannot have more than type of accounts");
+            }
+        }
         accounts.add(account);
 
     }
@@ -28,8 +36,10 @@ public abstract class Customer {
 
     public void viewAllCustomerAccounts(){
         for(Account acc : accounts){
-            System.out.println(acc);
+            System.out.println("The customer has "+acc);
         }
+
     }
+
 
 }
