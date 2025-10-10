@@ -13,7 +13,7 @@ public class BankingAppSystem {
         savings.accountType = "SavingsAccount";
         TsholofeloCompany.addAccount(savings);
 
-        //SavingsAccount savings1 = new SavingsAccount(TsholofeloCompany);
+
 
 
 
@@ -35,7 +35,7 @@ public class BankingAppSystem {
         chkaccount.accountNumber = "343322";
 
         AccountController controller = new AccountController();
-        controller.addAccountToCustomer(TsholofeloCompany,savings);
+        //controller.addAccountToCustomer(TsholofeloCompany,savings);
         //TsholofeloCompany.viewAllCustomerAccounts();
         //Henry.addAccount(chkaccount);
         //Henry.viewAllCustomerAccounts();
@@ -55,6 +55,14 @@ public class BankingAppSystem {
 
         //cutsomer1.viewAllCustomerAccounts();ddd
         //investement.payInterest();
+
+        Customer AmericanGoverment = new Goverment(" AmericanGoverment","private Bag 5332",76262632,"Kentseo",10001);
+        SavingsAccount savings1 = new SavingsAccount(AmericanGoverment);
+        savings1.accountType = "Savings Account";
+        savings1.branchCode="232244";
+        savings1.accountNumber="2343222";
+        AmericanGoverment.addAccount(savings1);
+        AmericanGoverment.viewAllCustomerAccounts();
 
 
 
