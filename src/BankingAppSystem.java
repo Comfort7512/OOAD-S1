@@ -13,7 +13,7 @@ public class BankingAppSystem {
         savings.accountType = "SavingsAccount";
         TsholofeloCompany.addAccount(savings);
 
-        SavingsAccount savings1 = new SavingsAccount(TsholofeloCompany);
+        //SavingsAccount savings1 = new SavingsAccount(TsholofeloCompany);
 
 
 
