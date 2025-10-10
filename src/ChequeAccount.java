@@ -28,10 +28,7 @@ public class ChequeAccount extends Account implements Withdraw{
     public String viewBalance() {
         return "Balance: " + balance;
     }
-    @Override
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
+
 
 
 }

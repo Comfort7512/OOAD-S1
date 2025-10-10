@@ -22,7 +22,6 @@ public class BankingAppSystem {
         investement.branchCode = "495040";
         investement.accountNumber= "00000000";
         investement.accountType = "Investment Account";
-        investement.setCustomer(TsholofeloCompany);
 
         TsholofeloCompany.addAccount(investement);
         TsholofeloCompany.viewAllCustomerAccounts();
@@ -34,6 +33,10 @@ public class BankingAppSystem {
         ChequeAccount chkaccount = new ChequeAccount(6000,Henry);
         chkaccount.withDraw(500);
         chkaccount.accountNumber = "343322";
+
+        AccountController controller = new AccountController();
+        controller.addAccountToCustomer(TsholofeloCompany,savings);
+        //TsholofeloCompany.viewAllCustomerAccounts();
         //Henry.addAccount(chkaccount);
         //Henry.viewAllCustomerAccounts();
 

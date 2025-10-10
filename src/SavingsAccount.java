@@ -41,8 +41,4 @@ public class SavingsAccount extends Account implements PayInterest {
         return "Automatic interest application started. Interest will apply every 5 seconds.";
     }
 
-    @Override
-    public void setCustomer(Customer customer) {
-        this.customer = customer;
-    }
 }

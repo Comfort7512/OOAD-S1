@@ -5,9 +5,10 @@ public abstract class Customer {
      String address;
      String name;
      int phoneNumber;
+    private ArrayList<Account> accounts;
 
     public Customer(){
-
+       this.accounts= new ArrayList<>();
     }
 
     public Customer(String address,String name, int phoneNumber){
@@ -16,18 +17,13 @@ public abstract class Customer {
         this.name = name;
     }
 
-    ArrayList<Account> accounts = new ArrayList<>();
+    public String getName() {
+        return name;
+    }
+
 
     public void addAccount(Account account){
-        if(accounts.size() > 3){
-            System.out.println("Cannot have more than 3 accounts");
-        }
-        for(Account acc : accounts){
-            if(acc.getClass() == account.getClass()){
-                throw new IllegalArgumentException("Cannot have more than type of accounts");
-            }
-        }
-        accounts.add(account);
+           accounts.add(account);
 
     }
     public ArrayList<Account> getAccounts() {
@@ -36,7 +32,7 @@ public abstract class Customer {
 
     public void viewAllCustomerAccounts(){
         for(Account acc : accounts){
-            System.out.println("The customer has "+acc);
+            System.out.println("The customer "+getName()+ " has"+acc.getAccountType());
         }
 
     }

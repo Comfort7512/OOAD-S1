@@ -13,6 +13,10 @@ public abstract class Account {
         this.customer = customer;
     }
 
+    public String getAccountType() {
+        return accountType;
+    }
+
     public Customer getCustomer() {
         return customer;
     }
