@@ -7,6 +7,10 @@ public class SavingsAccount extends Account implements PayInterest {
     Customer customer;
 
 
+    public SavingsAccount(Customer customer){
+        this.customer = customer;
+
+    }
     @Override
     public String deposit(int amount){
       balance+=amount;

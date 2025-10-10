@@ -7,11 +7,12 @@ public class InvestmentAccount extends Account implements PayInterest,Withdraw {
      final double minimumDeposit = 500;
     Customer customer;
 
-    public InvestmentAccount(double openingBalance){
+    public InvestmentAccount(double openingBalance,Customer customer){
         if(openingBalance<minimumDeposit){
            throw new IllegalArgumentException("Minimum balance should be 500");
         }else {
             this.balance = openingBalance;
+            this.customer = customer;
 
         }
     }

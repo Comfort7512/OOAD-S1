@@ -4,36 +4,38 @@ public class BankingAppSystem {
     public static void main(String[] args) {
 
 
-        Customer cutsomer1 = new PrivateCompany("private bag 234","Tsholofelo",76343234);
+        Customer TsholofeloCompany = new PrivateCompany("private bag 234","Tsholofelo",76343234);
 
-        SavingsAccount savings = new SavingsAccount();
+        SavingsAccount savings = new SavingsAccount(TsholofeloCompany);
         savings.deposit(500);
         savings.branchCode = "2343";
         savings.accountNumber = "203220393";
         savings.accountType = "SavingsAccount";
-        savings.setCustomer(cutsomer1);
-        cutsomer1.addAccount(savings);
+        TsholofeloCompany.addAccount(savings);
 
-        SavingsAccount savings1 = new SavingsAccount();
-        ;
+        SavingsAccount savings1 = new SavingsAccount(TsholofeloCompany);
 
-        InvestmentAccount investement = new InvestmentAccount(500);
+
+
+        InvestmentAccount investement = new InvestmentAccount(500,TsholofeloCompany);
         investement.deposit(100);
         investement.branchCode = "495040";
         investement.accountNumber= "00000000";
         investement.accountType = "Investment Account";
-        investement.setCustomer(cutsomer1);
-        cutsomer1.addAccount(investement);
+        investement.setCustomer(TsholofeloCompany);
 
-        System.out.println(investement.viewBalance());
+        TsholofeloCompany.addAccount(investement);
+        TsholofeloCompany.viewAllCustomerAccounts();
+
+        //System.out.println(investement.viewBalance());
         Customer Henry = new WorkingCustomer("Henry","po box 48","private Bag 004","Okavango",7858473);
 
 
         ChequeAccount chkaccount = new ChequeAccount(6000,Henry);
         chkaccount.withDraw(500);
         chkaccount.accountNumber = "343322";
-        Henry.addAccount(chkaccount);
-        Henry.viewAllCustomerAccounts();
+        //Henry.addAccount(chkaccount);
+        //Henry.viewAllCustomerAccounts();
 
 
 
