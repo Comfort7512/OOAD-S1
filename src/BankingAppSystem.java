@@ -53,7 +53,7 @@ public class BankingAppSystem {
         cutsomer1.viewAllCustomerAccounts();*/
 
 
-        //cutsomer1.viewAllCustomerAccounts();
+        //cutsomer1.viewAllCustomerAccounts();ddd
         //investement.payInterest();
 
 
