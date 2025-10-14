@@ -34,11 +34,8 @@ public class BankingAppSystem {
         chkaccount.withDraw(500);
         chkaccount.accountNumber = "343322";
 
-        AccountController controller = new AccountController();
-        //controller.addAccountToCustomer(TsholofeloCompany,savings);
-        //TsholofeloCompany.viewAllCustomerAccounts();
-        //Henry.addAccount(chkaccount);
-        //Henry.viewAllCustomerAccounts();
+        
+        
 
 
 
