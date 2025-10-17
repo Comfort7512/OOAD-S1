@@ -1,0 +1,13 @@
+.regButton{
+   -fx-background-color: #0AC2FF;
+   -fx-background-radius:10;
+}
+.openAccount{
+   -fx-background-color: #1AC6FF;
+   -fx-background-radius:10;
+}
+
+
+.regButton:hover{
+   -fx-cursor:hand;
+}

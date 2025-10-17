@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankingappproject.HelloController">
+   <children>
+      <Label alignment="TOP_CENTER" prefHeight="81.0" prefWidth="730.0" text="We Offer Different  Types Of Accounts Including Savings Account, Investment Account, And Cheque Account" wrapText="true">
+         <VBox.margin>
+            <Insets left="10.0" top="20.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="155.0" prefWidth="650.0" style="-fx-background-color: #77DDFF;" stylesheets="@Button.css">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="Savings Account">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="21.0" lineSpacing="1.0" opacity="0.67" prefHeight="89.0" prefWidth="522.0" text="A Savings account where a customer may deposit funds for future use. This account is capable of paying some monthly interest based on the amount,balance, in the account. This account does not allow any withdrawals fromit." wrapText="true" />
+            <Button layoutX="450.0" layoutY="98.0" mnemonicParsing="false" onAction="#toSavings" prefHeight="40.0" prefWidth="103.0" styleClass="openAccount" stylesheets="@Button.css" text="Open Account" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" />
+         </VBox.margin>
+      </Pane>
+      <Pane layoutX="25.0" layoutY="168.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="155.0" prefWidth="650.0" style="-fx-background-color: #77DDFF;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="Investment Account">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="21.0" lineSpacing="1.0" opacity="0.68" prefHeight="89.0" prefWidth="522.0" text="The Investment account which is an account that pays more interest thanthe savings account. The customer is allowed to deposit funds into the account as well as be able to withdraw any funds they need. The account can only be opened with an initial deposit of BWP500.00." wrapText="true" />
+            <Button layoutX="450.0" layoutY="98.0" mnemonicParsing="false" onAction="#toInvestmentAccount" prefHeight="40.0" prefWidth="92.0" styleClass="openAccount" stylesheets="@Button.css" text="Open Account" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </Pane>
+      <Pane layoutX="25.0" layoutY="338.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="175.0" prefWidth="658.0" style="-fx-background-color: #77DDFF;">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="Cheque Account">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="-22.0" lineSpacing="1.0" opacity="0.68" prefHeight="189.0" prefWidth="522.0" styleClass="openAccount" text="A Cheque account that is normally used for crediting of salaries. Customers normally get their salary payment through this account. The account allows deposits and withdrawals of any amount of funds. This account can only be opened for any person who is working. The customer in this case must provide information on where they are working (i.e. the company, the company address," wrapText="true" />
+            <Button layoutX="455.0" layoutY="121.0" mnemonicParsing="false" onAction="#toCheckAccount" prefHeight="40.0" prefWidth="92.0" styleClass="openAccount" stylesheets="@Button.css" text="Open Account" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </Pane>
+      <Button mnemonicParsing="false" onAction="#backToDashBoard" prefHeight="47.0" prefWidth="242.0" styleClass="text-field" stylesheets="@test.css" text="Back To DashBoard">
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
