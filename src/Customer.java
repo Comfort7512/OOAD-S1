@@ -5,7 +5,7 @@ public abstract class Customer {
      String address;
      String name;
      int phoneNumber;
-    private ArrayList<Account> accounts;
+     private ArrayList<Account> accounts;
 
     public Customer(){
        this.accounts= new ArrayList<>();

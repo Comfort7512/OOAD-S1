@@ -15,6 +15,7 @@ public abstract class Account {
 
     public String getAccountType() {
         return accountType;
+
     }
 
     public Customer getCustomer() {
